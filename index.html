@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiCloud</title>
+    <link rel="icon" href="Asset/Logo_diCloud.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Folder Bootstap/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- login menu -->
+    <div class="position-absolute col-xl-4 col-sm-8 col-10 p-3 p-xl-5 p-sm-3  border radius position-fixed position-absolute login bg-white"
+        id="loginPopUp">
+        <i class="bi bi-x-circle float-end pointer fs-4" id="closeLogin"></i>
+        <form>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input type="email" id="form2Example1" class="form-control" />
+                <label class="form-label" for="form2Example1">Email address</label>
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+                <input type="password" id="form2Example2" class="form-control" />
+                <label class="form-label" for="form2Example2">Password</label>
+            </div>
+
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+                    <!-- Checkbox -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                        <label class="form-check-label" for="form2Example31"> Remember me </label>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <!-- Simple link -->
+                    <a href="#!">Forgot password?</a>
+                </div>
+            </div>
+
+            <!-- Submit button -->
+            <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+            <!-- Register buttons -->
+            <div class="text-center">
+                <p>Not a member? <a href="#!">Register</a></p>
+                <p>or sign up with:</p>
+                <button type="button" class="btn btn-link bg-black btn-floating mx-1">
+                    <i class="fab fa-facebook-f "></i>
+                </button>
+
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-google"></i>
+                </button>
+
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-twitter"></i>
+                </button>
+
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-github"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+    <!-- Header -->
+    <header id="header"
+        class="d-flex col-12 header pt-2 pb-2 align-items-center justify-content-between ps-5 fixed-top">
+        <div class="img col-8">
+            <img src="Asset/Logo_diCloud.png" width="70rem" height="auto" class="" alt="">
+        </div>
+        <nav class="navigasi list-unstyled d-flex col-4 justify-content-evenly align-items-center text-white">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#menu">Menu</a>
+            <li><a class="nav-link" href="#contack">Contack</a></li>
+            <button id="buuton" class="ps-3 pt-2 pb-2 pe-3 text-white"><span class="text-white fw-bold">Log
+                    in</span></button>
+        </nav>
+        <span class="d-lg-none " id="close_navbar"><i
+                class="menu-toggle bi bi-x-square text-white fs-1 pe-4 "></i></span>
+        <span class="d-lg-none " id="hamburgerMenu"><i class="menu-toggle bi bi-list text-white fs-1 pe-4 "></i></span>
+    </header>
+    <!-- Main -->
+    <div id="home"
+        class="row pt-6 col-lg-12 col-md-12 col-sm-12 justify-content-lg-center col-12 p-lg-5  d-flex align-items-center">
+        <div class="container row">
+            <div
+                class="col-xl-6 pt-3 text-xl-start text-lg-center text-md-center text-sm-center  text-center text-xl-start col-lg-12 col-sm-12 text-white d-flex flex-column k1">
+                <h2 class="fs-1 ">Hosting No.1 Di Indonesia Siap Wujudkan Impian!</h2>
+                <h4 class="fs-4">Diskon Hosting up to 88%</h4>
+                <h5 class="fs-6 ps-1"><span class="text-success me-2">✅</span>Gratis Domain</h5>
+                <h5 class="fs-6 ps-1 "><span class="text-success me-2">✅</span>Gratis Migrasi Website</h5>
+                <h5 class="fs-6 ps-1"><span class="text-success me-2">✅</span>Bantuan Pelanggan 24/7</h5>
+                <h1 class="harga"><span class="fs-5">Rp.</span>25.000<span class="fs-5">/bulan</span></h1>
+                <div class="col-12 d-flex flex-column">
+                    <span class="fs-3 mb-1">Promo Coba Gratiss Dulu</span>
+                    <div class="waviy">
+                        <span style="--i:1">3</span>
+                        <span style="--i:2">1</span>
+                        <span style="--i:3">D</span>
+                        <span style="--i:4">E</span>
+                        <span style="--i:5">S</span>
+                        <span style="--i:6">E</span>
+                        <span style="--i:7">M</span>
+                        <span style="--i:8">B</span>
+                        <span style="--i:9">E</span>
+                        <span style="--i:10">R</span>
+                    </div>
+                    <div
+                        class="align-items-center clock mb-3 col-xl-6 col-lg-8 radius border-kuning col-md-8 col-sm-8 col-10 d-flex justify-content-evenly ">
+                        <div class="d-flex flex-column border-kuning bg-black col-3 p-2 contaier-clock">
+                            <span class=" fs-5 me-auto ms-auto d-block" id="days">00</span>
+                            <span class="text-center">Days</span>
+                        </div>
+                        <!-- <span class=" fs-2 me-1 ms-1">:</span> -->
+                        <div class="d-flex flex-column border-kuning bg-black p-2 col-3  contaier-clock">
+                            <span class="fs-5 me-auto ms-auto d-block" id="hours">00</span>
+                            <span class="text-center">Hours</span>
+                        </div>
+                        <!-- <span class=" fs-2 me-1 ms-1">:</span> -->
+                        <div class="d-flex flex-column border-kuning bg-black p-2 col-3 contaier-clock">
+                            <span class=" fs-5 me-auto ms-auto d-block" id="minutes">00</span>
+                            <span class="text-center">Minutes</span>
+                        </div>
+                        <!-- <span class=" fs-2 me-1 ms-1">:</span> -->
+                        <div class="d-flex flex-column border-kuning bg-black p-2 col-3 contaier-clock">
+                            <span class=" fs-5 me-auto ms-auto d-block" id="seconds">00</span>
+                            <span class="text-center">Second</span>
+                        </div>
+                    </div>
+                    <a href="#menuGratis">
+                        <button class="bg-kuning mb-1 col-6 pt-2 pb-2 radius">COBA DULU SEKARANG</button>
+                    </a>
+                    <span><i class="fa-solid fa-shield-halved me-2"></i>keamanan Terjamin Aman 100%</span>
+                </div>
+            </div>
+            <div class="col-xl-6  col-lg-12 col-sm-12">
+                <img id="img-home" src="Asset/home_icon.png" width="80%" height="auto" class="d-block ms-auto me-auto"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <div class="col-12 p-2 pt-5 text-black mb-3">
+        <h1 class="fr">Pilih Paket Hosting Sesuai Kebutuhan Anda</h1>
+    </div>
+
+    <div class="col-12 container row d-flex flex-row d-block me-auto ms-auto" style="margin-bottom: 7rem;">
+        <!-- menu 1 -->
+        <div class="col-lg-4 mb-4 col-md-12 d-block me-auto ms-auto g-5" id="bisnis">
+            <div class="card menu-1 container pt-4 col-10 text-center d-flex d-block me-auto ms-auto">
+                <h2 class="fs-3">Business</h2>
+                <p>Paket lengkap untuk bisnis, portal berita, atau toko online</p>
+                <div class="d-flex mb-2 flex-row justify-content-center align-items-center">
+                    <h6 class="text-light me-2 "><s>Rp. 119.900</s></h6>
+                    <h6 class="text-dark p-2 radius-2 subtle" style="background-color:  #bfbbbb;;">Diskon 62%</h6>
+                </div>
+                <h1 class="fs-1 mb-2"><span class="fs-5">Rp.</span>45.900<span class="fs-5">/bulan</span></h1>
+                <h3 class="text-dark fs-4">+ Gratis 3 bulan</h3>
+                <button class="col-10 bg-dark pt-2 pb-2 d-block mb-2 me-auto ms-auto text-white border-0 radius"><span>Pilih
+                        Paket</span></button>
+                <p class="text-light fs-7 mb-4">Rp.49.900/bulan saat perpanjang layanan</p>
+                <hr>
+                <div class="text-start fs-7">
+                    <h5 class="mb-3 fs-5">Fitur unggulan</h5>
+                    <p><span class="text-success me-2">✅</span>Performa <b>Standart</b></p>
+                    <p><span class="text-success me-2">✅</span><b>100</b> Website</p>
+                    <p><span class="text-success me-2">✅</span><b>100 GB</b> SSD Storage</p>
+                    <p><span class="text-success me-2">✅</span>Backup <b>Mingguan</b></p>
+                    <p><span class="text-success me-2">✅</span>SSL Gratis <b>Unlimitid</b></p>
+                    <p><span class="text-success me-2">✅</span><b>Unlimitid</b>Bandwidth</p>
+                    <p><span class="text-success me-2">✅</span>Email <b>Gratis</b></p>
+                    <p><span class="text-success me-2">✅</span>Domain <b>Gratis </b>(Senilai Rp.150.000)</p>
+                    <p><span class="text-danger me-2">❌</span>CDN <b>Gratis</b></p>
+                    <p><span class="text-danger me-2">❌</span>Alamat IP <b>Dedicated</b></p>
+                    <h5 class="mt-4 mb-4 fs-5">Managed WordPress</h5>
+                    <p><span class="text-danger me-2">✅</span>Optimasi WooCommerce <b>Basic</b></p>
+                    <p><span class="text-success me-2">✅</span><b>Gratis</b> Migrasi Website </p>
+                    <p><span class="text-success me-2">✅</span><b>WordPress</b>Accelerator (LiteSpeed)</p>
+                    <p><span class="text-success me-2">✅</span>Update <b>WordPress</b> Otomatis</p>
+                    <p><span class="text-success me-2">✅</span><b>WordPress</b>Vulnerabilities Scanner</p>
+                    <p><span class="text-success me-2">✅</span><b>WordPress </b> Multisite</p>
+                    <p><span class="text-success me-2">✅</span><b>WP-CLI</b>dan SSH</p>
+                    <p><span class="text-danger me-2">❌</span>Tool<b>WordPress</b>Staging</p>
+                    <p><span class="text-danger me-2">❌</span><b>Object Cache </b> untuk WordPress</p>
+                    <p><span class="text-danger me-2">❌</span>Backup <b>Sesuai Kebutuhan</b></p>
+                    <div class="selengkapnya mb-4">
+                        <h5 class="mt-4 mb-4 fs-5">Website Builder tanpa Coding</h5>
+                        <p><span class="text-success me-2">✅</span>Website Builder <b>Drag&Drop</b></p>
+                        <p><span class="text-success me-2">✅</span><b>AI</b> untuk Buat Website</p>
+                        <p><span class="text-success me-2">✅</span><b>150</b>Template dari Designer Professional</p>
+                        <p><span class="text-success me-2">✅</span>Integrasi <b>Google Analytics</b></p>
+                        <p><span class="text-success me-2">✅</span>Integrasi tool <b>marketing</b></p>
+                        <p><span class="text-success me-2">✅</span><b>AI</b>Copywriting</p>
+                        <p><span class="text-success me-2">✅</span><b>AI</b> Heatmap</p>
+                        <p><span class="text-success me-2">✅</span><b>AI</b> untuk Optimasi SEO</p>
+                        <p><span class="text-danger me-2">❌</span>Fitur khusus <b> eCommerce</b></p>
+                        <p><span class="text-success me-2">✅</span><b>0% </b>Biaya Transaksi</p>
+                        <p><span class="text-danger me-2">❌</span><b>20+ </b>Metode Pembayaran</p>
+                    </div>
+                    <h4 class="text-center pointer fs-5 selengkapnya-1 text-primary">Lihat selengkapnya</h4>
+                    <h4 class="selengkapnya-2 pointer text-center fs-5 text-danger">Lihat lebih sedikit</h4>
+                </div>
+            </div>
+
+        </div>
+        <!-- menu 2 -->
+        <div class="col-lg-4 mb-4 col-md-12  d-block me-auto ms-auto g-5" id="menuGratis">
+            <div class="card pt-4 container menu-2 col-10 text-center d-flex  d-block me-auto ms-auto">
+                <h2 class="fs-3">Premium</h2>
+                <p>Cocok untuk personal branding awtau blog Anda</p>
+                <div class="d-flex mb-2 flex-row justify-content-center align-items-center">
+                    <h6 class="text-light me-2 "><s>Rp. 109.000</s></h6>
+                    <h6 class="text-dark p-2 radius-2 " style="background-color:  rgb(248, 232, 130) ;">Diskon 100%</h6>
+                </div>
+                <h1 class="fs-1 mb-2"><span class="fs-5">Rp.</span>00.000<span class="fs-5">/bulan</span></h1>
+                <h3 class="fs-4" style="color:  rgb(187, 162, 4) ;">+ Gratis 3 Bulan</h3>
+                <button class="col-10 pt-2 pb-2 d-block mb-2 me-auto ms-auto text-white border-0 radius"
+                    style="background-color: rgb(219, 190, 4);"><span>Pilih
+                        Paket</span></button>
+                <p class="text-light fs-7 mb-4">Rp.49.900/bulan saat perpanjang layanan</p>
+                <hr>
+                <div class="text-start fs-7">
+                    <h5 class="mb-3 fs-5">Fitur unggulan</h5>
+                    <p><span class="text-success me-2">✅</span>Performa <b>Standart</b></p>
+                    <p><span class="text-success me-2">✅</span><b>100</b> Website</p>
+                    <p><span class="text-success me-2">✅</span><b>100 GB</b> SSD Storage</p>
+                    <p><span class="text-success me-2">✅</span>Backup <b>Mingguan</b></p>
+                    <p><span class="text-success me-2">✅</span>SSL Gratis <b>Unlimitid</b></p>
+                    <p><span class="text-success me-2">✅</span><b>Unlimitid</b>Bandwidth</p>
+                    <p><span class="text-success me-2">✅</span>Email <b>Gratis</b></p>
+                    <p><span class="text-success me-2">✅</span>Domain <b>Gratis </b>(Senilai Rp.150.000)</p>
+                    <p><span class="text-danger me-2">❌</span>CDN <b>Gratis</b></p>
+                    <p><span class="text-danger me-2">❌</span>Alamat IP <b>Dedicated</b></p>
+                    <h5 class="mt-4 mb-4 fs-5">Managed WordPress</h5>
+                    <p><span class="text-danger me-2">✅</span>Optimasi WooCommerce <b>Basic</b></p>
+                    <p><span class="text-success me-2">✅</span><b>Gratis</b> Migrasi Website </p>
+                    <p><span class="text-success me-2">✅</span><b>WordPress</b>Accelerator (LiteSpeed)</p>
+                    <p><span class="text-success me-2">✅</span>Update <b>WordPress</b> Otomatis</p>
+                    <p><span class="text-success me-2">✅</span><b>WordPress</b>Vulnerabilities Scanner</p>
+                    <p><span class="text-success me-2">✅</span><b>WordPress </b> Multisite</p>
+                    <p><span class="text-success me-2">✅</span><b>WP-CLI</b>dan SSH</p>
+                    <p><span class="text-danger me-2">❌</span>Tool<b>WordPress</b>Staging</p>
+                    <p><span class="text-danger me-2">❌</span><b>Object Cache </b> untuk WordPress</p>
+                    <p><span class="text-danger me-2">❌</span>Backup <b>Sesuai Kebutuhan</b></p>
+                    <div class="selengkapnya-3" style="display: none;">
+                        <h5 class="mt-4 mb-4 fs-5">Website Builder tanpa Coding</h5>
+                        <p><span class="text-success me-2">✅</span>Website Builder <b>Drag&Drop</b></p>
+                        <p><span class="text-success me-2">✅</span><b>AI</b> untuk Buat Website</p>
+                        <p><span class="text-success me-2">✅</span><b>150</b>Template dari Designer Professional</p>
+                        <p><span class="text-success me-2">✅</span>Integrasi <b>Google Analytics</b></p>
+                        <p><span class="text-success me-2">✅</span>Integrasi tool <b>marketing</b></p>
+                        <p><span class="text-success me-2">✅</span><b>AI</b>Copywriting</p>
+                        <p><span class="text-success me-2">✅</span><b>AI</b> Heatmap</p>
+                        <p><span class="text-success me-2">✅</span><b>AI</b> untuk Optimasi SEO</p>
+                        <p><span class="text-danger me-2">❌</span>Fitur khusus <b> eCommerce</b></p>
+                        <p><span class="text-success me-2">✅</span><b>0% </b>Biaya Transaksi</p>
+                        <p><span class="text-danger me-2">❌</span><b>20+ </b>Metode Pembayaran</p>
+                    </div>
+                    <h4 class="text-center pointer fs-5 selengkapnya-5 text-primary">Lihat selengkapnya</h4>
+                    <h4 class="selengkapnya-4 pointer text-center fs-5 text-danger" style="display: none;">Lihat lebih
+                        sedikit</h4>
+                </div>
+            </div>
+
+        </div>
+        <!-- menu 3 -->
+        <div class="col-lg-4 col-md-12 mb-4  d-block me-auto ms-auto g-5" id="starup">
+            <div class="card pt-4 col-10 menu-3 container text-center d-flex  d-block me-auto ms-auto">
+                <h2 class="fs-3">Cloud Startup</h2>
+                <p>Performa website yang lebih optimal & dedicated resource</p>
+                <div class="d-flex mb-2 flex-row justify-content-center align-items-center">
+                    <h6 class="text-light me-2 "><s>Rp. 109.000</s></h6>
+                    <h6 class="text-dark p-2 radius-2 subtle" style="background-color:  #bfbbbb;">Diskon 77%</h6>
+                </div>
+                <h1 class="fs-1 mb-2"><span class="fs-5">Rp.</span>150.000<span class="fs-5">/bulan</span></h1>
+                <h3 class="text-dark fs-4">+ Gratis 3 Bulan</h3>
+                <button class="col-10 bg-dark pt-2 pb-2 d-block mb-2 me-auto ms-auto text-white border-0 radius"><span>Pilih
+                        Paket</span></button>
+                <p class="text-light fs-7 mb-4">Rp.49.900/bulan saat perpanjang layanan</p>
+                <hr>
+                <div class="text-start fs-7">
+                    <h5 class="mb-3 fs-5">Fitur unggulan</h5>
+                    <p><span class="text-success me-2">✅</span>Performa <b>Standart</b></p>
+                    <p><span class="text-success me-2">✅</span><b>100</b> Website</p>
+                    <p><span class="text-success me-2">✅</span><b>100 GB</b> SSD Storage</p>
+                    <p><span class="text-success me-2">✅</span>Backup <b>Mingguan</b></p>
+                    <p><span class="text-success me-2">✅</span>SSL Gratis <b>Unlimitid</b></p>
+                    <p><span class="text-success me-2">✅</span><b>Unlimitid</b>Bandwidth</p>
+                    <p><span class="text-success me-2">✅</span>Email <b>Gratis</b></p>
+                    <p><span class="text-success me-2">✅</span>Domain <b>Gratis </b>(Senilai Rp.150.000)</p>
+                    <p><span class="text-danger me-2">X</span>CDN <b>Gratis</b></p>
+                    <p><span class="text-danger me-2">X</span>Alamat IP <b>Dedicated</b></p>
+                    <h5 class="mt-4 mb-4 fs-5">Managed WordPress</h5>
+                    <p><span class="text-danger me-2">✅</span>Optimasi WooCommerce <b>Basic</b></p>
+                    <p><span class="text-success me-2">✅</span><b>Gratis</b> Migrasi Website </p>
+                    <p><span class="text-success me-2">✅</span><b>WordPress</b>Accelerator (LiteSpeed)</p>
+                    <p><span class="text-success me-2">✅</span>Update <b>WordPress</b> Otomatis</p>
+                    <p><span class="text-success me-2">✅</span><b>WordPress</b>Vulnerabilities Scanner</p>
+                    <p><span class="text-success me-2">✅</span><b>WordPress </b> Multisite</p>
+                    <p><span class="text-success me-2">✅</span><b>WP-CLI</b>dan SSH</p>
+                    <p><span class="text-danger me-2">X</span>Tool<b>WordPress</b>Staging</p>
+                    <p><span class="text-danger me-2">X</span><b>Object Cache </b> untuk WordPress</p>
+                    <p><span class="text-danger me-2">X</span>Backup <b>Sesuai Kebutuhan</b></p>
+                    <div class="selengkapnya-6" style="display: none;">
+                        <h5 class="mt-4 mb-4 fs-5">Website Builder tanpa Coding</h5>
+                        <p><span class="text-success me-2">✅</span>Website Builder <b>Drag&Drop</b></p>
+                        <p><span class="text-success me-2">✅</span><b>AI</b> untuk Buat Website</p>
+                        <p><span class="text-success me-2">✅</span><b>150</b>Template dari Designer Professional</p>
+                        <p><span class="text-success me-2">✅</span>Integrasi <b>Google Analytics</b></p>
+                        <p><span class="text-success me-2">✅</span>Integrasi tool <b>marketing</b></p>
+                        <p><span class="text-success me-2">✅</span><b>AI</b>Copywriting</p>
+                        <p><span class="text-success me-2">✅</span><b>AI</b> Heatmap</p>
+                        <p><span class="text-success me-2">✅</span><b>AI</b> untuk Optimasi SEO</p>
+                        <p><span class="text-danger me-2">X</span>Fitur khusus <b> eCommerce</b></p>
+                        <p><span class="text-success me-2">✅</span><b>0% </b>Biaya Transaksi</p>
+                        <p><span class="text-danger me-2">X</span><b>20+ </b>Metode Pembayaran</p>
+                    </div>
+                    <h4 class="text-center selengkapnya-8 pointer fs-5  text-primary">Lihat selengkapnya</h4>
+                    <h4 class="pointer text-center fs-5 text-danger selengkapnya-7" style="display: none;">Lihat lebih
+                        sedikit</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-12 mb-4 indonesia p-5">
+        <div class="col-xl-12 col-lg-8 text-center container pt-5">
+            <h2 class="mb-3">Rasakan kualitas Data Center Terbaik di Indonesia</h2>
+            <p>Lokasi Server kami ada di jawa,Sumatra,kalimanatan,Papua,dan Bali.
+            </p>
+            <div class="col-xl-12 col-md-12 peta">
+                <img class="d-block ms-auto me-auto" height="auto" width="60%" src="Asset/peta_indonesia.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="col-12 p-2 pt-5 text-black mb-5">
+        <h1 class="fr">Dipercaya oleh berbagai pemilik website di seluruh indonesia</h1>
+    </div>
+    <div class="col-12 d-flex container m-auto mb-5 row">
+        <div class="card mb-sm-4 mb-md-4 mb-4 d-flex  flex-column container col-xl-3 col-md-12">
+            <div class="mb-3">
+                <span class="text-black fs-3">★</span>
+                <span class="text-black fs-3">★</span>
+                <span class="text-black fs-3">★</span>
+                <span class="text-black fs-3">★</span>
+                <span class="text-black fs-3">★</span>
+            </div>
+            <p style="margin-bottom: 2.5rem;">Web hosting terbaik yang pernah saya pakai selama bertahun-tahun. Karena
+                selain cepat dan aman, customer
+                supportnya pun luar bisa membantu ketika ada kesulitan.</p>
+            <div class="col-12 border-top pt-3 align-items-center pb-4 d-flex">
+                <img src="Asset/aset.person.jpg" width="70px" style="border-radius: 100px; margin-right: 2rem;"
+                    height="70px" alt="">
+                <div class="d-flex flex-column ">
+                    <h6 class="fs-5 fw-bold">Charley</h6>
+                    <p class="fs-6">IT</p>
+                </div>
+            </div>
+        </div>
+        <div class="card d-flex flex-column mb-sm-4 mb-md-4 mb-4 container col-xl-3 col-md-12">
+            <div class="mb-3">
+                <span class="text-black fs-3">★</span>
+                <span class="text-black fs-3">★</span>
+                <span class="text-black fs-3">★</span>
+                <span class="text-black fs-3">★</span>
+                <span class="text-black fs-3">★</span>
+            </div>
+            <p style="margin-bottom: 4rem;">Selain unggul di kecepatan loading dan keamanan server, Niagahoster juga
+                punya layanan CS 24/7 yang full support banget. Jadi, selalu nyaman pakainya.</p>
+            <div class="col-12 border-top pt-3 align-items-center pb-4 d-flex">
+                <img src="Asset/aset.person3.jpg" width="70px" style="border-radius: 100px; margin-right: 2rem;"
+                    height="70px" alt="">
+                <div class="d-flex flex-column ">
+                    <h6 class="fs-5 fw-bold">Henson</h6>
+                    <p class="fs-6">IT</p>
+                </div>
+            </div>
+        </div>
+        <div class="card d-flex flex-column  mb-sm-4 mb-md-4 mb-4 container col-xl-3 col-md-12">
+            <div class="mb-3">
+                <span class="text-black fs-3">★</span>
+                <span class="text-black fs-3">★</span>
+                <span class="text-black fs-3">★</span>
+                <span class="text-black fs-3">★</span>
+                <span class="text-black fs-3">★</span>
+            </div>
+            <p>Selama ini saya kesulitan ketika memilih hosting atau mencari domain. Bersyukur ada diCloud yang
+                super baik Customer Servicenya. Saya rekomen untuk semua pengusaha yang mencari hosting yang reliable
+                boleh beralih ke diCloud</p>
+            <div class="col-12 border-top pt-3 align-items-center pb-4 d-flex">
+                <img src="Asset/aset.person2.jpg" width="70px" style="border-radius: 100px; margin-right: 2rem;"
+                    height="70px" alt="">
+                <div class="d-flex flex-column ">
+                    <h6 class="fs-5 fw-bold">Angel</h6>
+                    <p class="fs-6">IT</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-12 container text-center mb-5">
+        <h1>Segera Bergabung Dengan 100 orang</h1>
+        <h1 class="mb-4">pemilik website lainya</h1>
+        <a href="#menu" class="MS"><button class="text-white bg-dark pt-2 pb-2 pe-4 ps-4 radius">mulai
+                Sekarang</button></a>
+    </div>
+
+    <footer class="bg-black" id="contack">
+        <div class="container g-4 row text-white">
+            <div class="col-xl-4  d-flex flex-column">
+                <img class="" src="Asset/Logo_diCloud.png" width="100rem" height="auto" alt="">
+                <p class="mb-2">Perusahaan kami berdiri sejak tahun 2023,perusahaan kami menyediakan layanan Hosting
+                    yang cepat dan pastinya murah</p>
+                <p class="">Tujuan Berdirinya perusahaan ini adalah membantu orang orang untuk lebih berkontribuisi di
+                    bidang web</p>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-6 col-6 d-flex flex-column">
+                <h5><b>Hosting</b></h5>
+                <a href="#menuGratis" class="text-none">
+                    <p>Premium</p>
+                </a>
+                <a href="#bisnis" class="text-none">
+                    <p>Busines</p>
+                </a>
+                <a href="#starup" class="text-none">
+                    <p>Cloud start up</p>
+                </a>
+                <h5><b>Domain</b></h5>
+                <a href="#" class="text-none">
+                    <p>Domain Gratis</p>
+                </a>
+                <h5><b>Tool</b></h5>
+                <a href="#" class="text-none">
+                    <p>Website Builder</p>
+                </a>
+            </div>
+            <div class="col-xl-4 col-md-6 col-lg-6 col-6 d-flex flex-column">
+                <h5><b>informasi</b></h5>
+                <a href="#" class="text-none">
+                    <p>Tranfer Hosting</p>
+                </a>
+                <h5><b>legal</b></h5>
+                <a href="#" class="text-none">
+                    <p>Kebijakan Privasi</p>
+                </a>
+                <h5><b>Perusahaan</b></h5>
+                <a href="#" class="text-none">
+                    <p>Tentang diCloud</p>
+                </a>
+                <h5><b>Bantuan</b></h5>
+                <a href="#" class="text-none">
+                    <p>Penyalahgunaan</p>
+                </a>
+            </div>
+        </div>
+        <div class="text-lg-end text-md-start">
+            <a class="btn btn-black" href="#!" role="button">
+                <i class="fab fa-instagram text-white fs-3"></i>
+            </a>
+            <a class="btn btn-black" href="#!" role="button">
+                <i class="fab fa-facebook text-white fs-3"></i>
+            </a>
+            <a class="btn btn-black" href="#!" role="button">
+                <i class="fab fa-linkedin text-white fs-3"></i>
+            </a>
+            <a class="btn btn-black" href="#!" role="button">
+                <i class="fab fa-twitter text-white fs-3"></i>
+            </a>
+        </div>
+        <div class="border-top">
+            <p class="text-white">&copy; 2023 dicloud.co.id - Web Hosting Terbaik, Layanan Cloud Hosting, VPS &
+                Registrasi Domain. </p>
+        </div>
+    </footer>
+
+    <div id="menu" style="position:absolute; top: 45rem;"></div>
+    <script src="script.js"></script>
+    <script></script>
+</body>
+
+</html>
